@@ -69,13 +69,15 @@ Automates end-to-end reporting from data extraction to dashboard generation.
 
 ---
 
-### 3. Data Lineage Investigation Tool
-Recursive tool to identify root causes of upstream data delays.
+### 3. Self-Service Data Governance Tool
+Enables bulk update of data ownership and access control through a self-service workflow powered by Google Sheets and Jenkins.
 
 **Highlights:**
-- Integrated multiple APIs to map data dependencies  
-- Implemented recursive traversal logic  
-- Enabled faster debugging of data pipeline issues  
+- Built a self-service interface using Google Sheets for bulk owner/editor updates  
+- Integrated with Data Product API to manage metadata ownership at scale  
+- Implemented multi-level validation (input, email, grouping) to ensure safe updates  
+- Designed Jenkins pipeline with staged execution (env_check → check → update)  
+- Logged all operations with detailed status tracking for auditability  
 
 ---
 
